@@ -69,6 +69,7 @@ stages:
   displayName: 'Stage Test'
   jobs: 
     - job: 'Delay'
+      pool: server
       displayName: 'Build job'
       steps:
       - task: Delay@1
