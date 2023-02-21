@@ -68,13 +68,13 @@ stages:
 - stage: 'Test'
   displayName: 'Stage Test'
   jobs: 
-    - job: 'Job Delay'
+    - job: 'Delay'
       displayName: 'Build job'
       steps:
       - task: Delay@1
-      displayName: 'Task Delay'
-      inputs:
-        delayForMinutes: '0'
+        displayName: 'Task Delay'
+        inputs:
+          delayForMinutes: '0'
 
 
 # - stage: 'Deploy'
